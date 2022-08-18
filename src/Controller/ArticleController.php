@@ -13,6 +13,6 @@ class ArticleController extends AbstractController{
      * @Method({"GET", "POST"})
      */
     public function index() {
-        return new Response("<h1 style='color:purple'>Article Post<h1>");
+        return $this->render('articles/index.html.twig');
     }
 }
